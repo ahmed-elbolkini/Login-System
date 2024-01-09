@@ -1,0 +1,50 @@
+body {
+  background: url(../images/pexels-kamil-5398480.jpg) no-repeat center center
+    fixed;
+  /* background-position: center; */
+  background-size: cover;
+  /* background-repeat: no-repeat; */
+}
+
+.input-feild {
+  max-width: 500px;
+  backdrop-filter: blur(20px);
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+}
+
+.welcome-container {
+  margin-top: 150px !important;
+}
+
+.welcome {
+  background-color: rgba(0, 0, 0, 0.479);
+  width: 500px;
+  height: 200px;
+  backdrop-filter: blur(20px);
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+}
+
+.welcome h2 {
+  color: #198754;
+}
+.form-control:focus {
+  border-color: #39a391;
+  outline: 0;
+  box-shadow: 0 0 0 0.25rem rgba(16, 136, 106, 0.25);
+}
+
+p a {
+  text-decoration: none;
+}
+
+p a:hover {
+  text-decoration: underline;
+}

@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=PT+Sans+Caption&family=Pacifico&family=Righteous&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./css/all.min.css" />
+    <link rel="stylesheet" href="./css/bootstrap.min.css" />
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+  <body>
+    <div
+      class="container mt-5 input-feild shadow d-flex justify-content-center align-items-center flex-column"
+    >
+      <h2 class="text-white my-4">Sign Up</h2>
+
+      <form
+        onsubmit="collectUserData(event)"
+        id="newform"
+        action="#"
+        class="d-flex justify-content-center align-items-center flex-column needs-validation"
+        novalidate
+      >
+        <div class="form-floating mb-3">
+          <input
+            type="text"
+            class="form-control"
+            id="username"
+            placeholder="User name"
+            name="username"
+            required
+          />
+
+          <label for="username"> User name </label>
+          <div id="usernameError" class="invalid-feedback">
+            username cannot be blank or have space
+          </div>
+          <div class="valid-feedback">Looks Good</div>
+        </div>
+
+        <div class="form-floating mb-3">
+          <input
+            type="email"
+            class="form-control"
+            name="email"
+            id="email"
+            placeholder="Email address"
+            required
+          />
+          <label for="email">Email address</label>
+          <div id="emailError" class="invalid-feedback">
+            Please Check Mail again.
+          </div>
+          <div class="valid-feedback">Looks Good</div>
+        </div>
+
+        <div class="form-floating mb-3">
+          <input
+            type="password"
+            class="form-control"
+            name="password"
+            id="password"
+            placeholder="Password"
+            required
+          />
+          <label for="password"> Password </label>
+          <div id="passwordError" class="invalid-feedback">
+            Enter valid Password
+          </div>
+          <div class="valid-feedback">Looks Good</div>
+        </div>
+
+        <div id="isEmpty"></div>
+        <button
+          type="submit"
+          onclick="collectUserData(event)"
+          id="button"
+          class="btn btn-success mt-3 mb-3"
+        >
+          Sign Up
+        </button>
+        <p class="text-white mb-4">
+          You have an account?
+          <a class="text-white" href="sginin.html">Sign in</a>
+        </p>
+      </form>
+    </div>
+
+    <script src="./js/all.min.js"></script>
+    <script src="./js/bootstrap.bundle.min.js"></script>
+    <script src="./js/signup.js"></script>
+  </body>
+</html>
